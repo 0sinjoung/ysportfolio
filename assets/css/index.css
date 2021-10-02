@@ -1,0 +1,44 @@
+:root {
+  --colorWhite: #FFFFFF;
+  --colorBlack: #000000;
+  --colorMainYellow: #FDDF83;
+  --colorMainYellowDeep: #F6D978;
+  --colorPointGreen: #5A7167;
+  --colorPointGreenDeep: #45564B;
+  --colorLightGrey: #F1F1F5;
+  --colorGrey: #767676;
+  --fontColorBlack: #191919;
+
+  --baseMargin: 8px;
+  --mobileGap: 24px;
+  --tabletGap: 64px;
+  --browserGap: 64px;
+
+  --mobileFontSize: 14px;
+  --browserFontSize: 16px;
+
+  --fontWeightRegular: 400;
+  --fontWeightbold: 700;
+  --fontWeightTitle: 900;
+}
+
+* {
+  outline: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Lato', 'Noto Sans KR', serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+}
