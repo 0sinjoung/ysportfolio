@@ -16,7 +16,9 @@
   --browserGap: 64px;
 
   --mobileFontSize: 14px;
-  --mobileHeroTitle: 52px;
+  --mobileCoverTitle: 52px;
+  --mobileTitleKo: 18px;
+  --mobileTitleEn: 24px;
   --browserFontSize: 16px;
 
   --fontWeightRegular: 400;
@@ -47,8 +49,7 @@ time, mark, audio, video, input {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+	/* vertical-align: baseline; */
   box-sizing: border-box;
 }
 
@@ -86,8 +87,12 @@ body {
   font-weight: 400;
   line-height: 1.5;
   position: relative;
+  -webkit-font-smoothing: antialiased;
 }
 
+main {
+
+}
 
 /* header */
 #main-header {
@@ -98,6 +103,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0 var(--mobileGap);
 }
 
 .menu-bars {
@@ -125,8 +131,8 @@ body {
 }
 
 .hero-title {
-  font-size: var(--mobileHeroTitle);
-  font-weight: var(--fontWeightTitle);
+  font-size: var(--mobileCoverTitle);
+  font-weight: var(--fontWeightbold);
   text-transform: uppercase;
   color: var(--colorWhite);
 }
@@ -136,6 +142,7 @@ body {
   height: var(--mobileHeaderSize);
   position: absolute;
   bottom: 0;
+  z-index: 100;
 }
 
 .nav-links ul {
@@ -149,4 +156,83 @@ body {
   font-weight: var(--fontWeightbold);
   text-transform: uppercase;
   color: var(--colorPointGreen);
+}
+
+/* About */
+#about {
+
+}
+
+.about-cover {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--colorPointGreen);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--colorWhite);
+}
+
+.about-cover .main-link {
+  color: var(--colorWhite);
+}
+
+.cover-title {
+  font-size: var(--mobileCoverTitle);
+  font-weight: var(--fontWeightbold);
+}
+
+.cover-desc {
+  text-align: center;
+  font-weight: var(--fontWeightRegular);
+}
+
+.motivation {
+  padding: calc(var(--baseMargin) * 10) var(--mobileGap);
+}
+
+.motivation-title {
+  font-size: var(--mobileTitleKo);
+  font-weight: var(--fontWeightbold);
+  margin-bottom: calc(var(--baseMargin) * 4);
+}
+
+.motivation-title span {
+  display: block;
+}
+
+.motivation-desc {
+  margin-bottom: calc(var(--baseMargin) * 2);
+}
+
+.skills {
+  padding: calc(var(--baseMargin) * 10) var(--mobileGap);
+  background-color: var(--colorLightGrey);
+}
+
+.skills-title {
+  font-size: var(--mobileTitleEn);
+  font-weight: var(--fontWeightbold);
+  margin-bottom: calc(var(--baseMargin) * 7);
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skill-item {
+  width: 50%;
+  margin-bottom: calc(var(--baseMargin) * 5);
+}
+
+.skill-item-title {
+  font-size: var(--mobileTitleKo);
+  font-weight: var(--fontWeightbold);
+  margin-bottom: calc(var(--baseMargin) * 2);
+}
+
+.skill-list {
+  margin-bottom: var(--baseMargin);
 }
