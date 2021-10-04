@@ -29,6 +29,7 @@
   --browserHeaderSize: 80px;
   --mobileCoverSize: 96vh;
   --tabletCoverSize: 100vh;
+  --footerHegiht: 80px;
 }
 
 
@@ -74,6 +75,8 @@ ol, ul, dl, li, dt, dd {
   padding: 0;
 }
 
+address {font-style: normal;}
+
 /* Settings */
 
 html {
@@ -97,7 +100,7 @@ main {
 
 }
 
-/* header */
+/* Header */
 #main-header {
   width: 100%;
   height: var(--mobileHeaderSize);
@@ -220,6 +223,10 @@ main {
   margin-bottom: calc(var(--baseMargin) * 7);
 }
 
+.skills-title::before {
+  content: "🛠 ";
+}
+
 .skills-container {
   display: flex;
   flex-wrap: wrap;
@@ -234,6 +241,19 @@ main {
   font-size: var(--mobileTitleSmall);
   font-weight: var(--fontWeightbold);
   margin-bottom: calc(var(--baseMargin) * 2);
+}
+
+.language::before {
+  content: "🔤 ";
+}
+.framework::before {
+  content: "⚙️ ";
+}
+.basic-knowledge::before {
+  content: "📂 ";
+}
+.design-tools::before {
+  content: "📐 ";
 }
 
 .skill-list {
@@ -296,3 +316,71 @@ main {
 .project-more-btn {
   display: block;
 }
+
+
+/* Contact */
+.contact-cover {
+  width: 100%;
+  height: var(--mobileCoverSize);
+  background-color: var(--colorMainYellow);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-cover .cover-title, 
+.contact-cover .cover-desc {
+  color: var(--colorWhite);
+}
+
+.contact-contents {
+  width: 100%;
+  /* height: var(--mobileCoverSize); */
+  padding: calc(var(--baseMargin) * 10) var(--mobileGrid);
+}
+
+.nametag {
+  font-weight: var(--fontWeightbold);
+  margin-bottom: calc(var(--baseMargin) * 5);
+}
+
+.name {
+  font-size: var(--mobileTitleSmall);
+}
+
+.department {
+  color: var(--colorMainYellowDeep);
+}
+
+.address-item {
+  margin-bottom: calc(var(--baseMargin) * 4);
+}
+
+.address-item-title {
+  display: block;
+  font-size: var(--mobileTitleSmall);
+  font-weight: var(--fontWeightbold);
+}
+
+.address-item a {
+  display: block;
+  color: var(--colorPointGreenDeep);
+}
+
+.address-item.email > a {
+  font-weight: var(--fontWeightbold);
+  text-decoration: underline;
+}
+
+
+
+/* Footer */
+#footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: var(--footerHegiht);
+  background-color: var(--colorLightGrey);
+}
+
