@@ -11,14 +11,14 @@
   --fontColorBlack: #191919;
 
   --baseMargin: 8px;
-  --mobileGap: 24px;
-  --tabletGap: 64px;
-  --browserGap: 64px;
+  --mobileGrid: 24px;
+  --tabletGrid: 64px;
+  --browserGrid: 64px;
 
   --mobileFontSize: 14px;
   --mobileCoverTitle: 52px;
-  --mobileTitleKo: 18px;
-  --mobileTitleEn: 24px;
+  --mobileTitleSmall: 18px;
+  --mobileTitleLarge: 24px;
   --browserFontSize: 16px;
 
   --fontWeightRegular: 400;
@@ -27,6 +27,8 @@
 
   --mobileHeaderSize: 80px;
   --browserHeaderSize: 80px;
+  --mobileCoverSize: 96vh;
+  --tabletCoverSize: 100vh;
 }
 
 
@@ -86,6 +88,7 @@ body {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.5;
+  color: var(--fontColorBlack);
   position: relative;
   -webkit-font-smoothing: antialiased;
 }
@@ -103,7 +106,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 var(--mobileGap);
+  padding: 0 var(--mobileGrid);
 }
 
 .menu-bars {
@@ -122,7 +125,7 @@ main {
 /* Hero */
 #hero {
   width: 100%;
-  height: 100vh;
+  height: var(--mobileCoverSize);
   background-color: var(--colorMainYellow);
   position: relative;
   display: flex;
@@ -165,7 +168,7 @@ main {
 
 .about-cover {
   width: 100%;
-  height: 100vh;
+  height: var(--mobileCoverSize);
   background-color: var(--colorPointGreen);
   position: relative;
   display: flex;
@@ -189,11 +192,11 @@ main {
 }
 
 .motivation {
-  padding: calc(var(--baseMargin) * 10) var(--mobileGap);
+  padding: calc(var(--baseMargin) * 10) var(--mobileGrid);
 }
 
 .motivation-title {
-  font-size: var(--mobileTitleKo);
+  font-size: var(--mobileTitleSmall);
   font-weight: var(--fontWeightbold);
   margin-bottom: calc(var(--baseMargin) * 4);
 }
@@ -207,12 +210,12 @@ main {
 }
 
 .skills {
-  padding: calc(var(--baseMargin) * 10) var(--mobileGap);
+  padding: calc(var(--baseMargin) * 10) var(--mobileGrid);
   background-color: var(--colorLightGrey);
 }
 
 .skills-title {
-  font-size: var(--mobileTitleEn);
+  font-size: var(--mobileTitleLarge);
   font-weight: var(--fontWeightbold);
   margin-bottom: calc(var(--baseMargin) * 7);
 }
@@ -228,11 +231,68 @@ main {
 }
 
 .skill-item-title {
-  font-size: var(--mobileTitleKo);
+  font-size: var(--mobileTitleSmall);
   font-weight: var(--fontWeightbold);
   margin-bottom: calc(var(--baseMargin) * 2);
 }
 
 .skill-list {
   margin-bottom: var(--baseMargin);
+}
+
+/* Project */
+#projects {
+
+}
+
+.project-cover {
+  width: 100%;
+  height: var(--mobileCoverSize);
+  background-color: var(--colorWhite);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project {
+  width: 100%;
+  height: var(--mobileCoverSize);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.typography-scale {
+  background-image: url(../img/typography-cover.jpg);
+}
+
+.sense-projects {
+  background-image: url(../img/sample.jpeg);
+}
+
+.project-desc-wrap {
+  width: 100%;
+  height: 100%;
+  background-color: #00000070;
+  color: var(--colorWhite);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.project-title {
+  text-transform: uppercase;
+  font-size: var(--mobileTitleSmall);
+  font-weight: var(--fontWeightbold);
+  margin-bottom: var(--baseMargin);
+}
+
+.project-desc-wrap dl {
+  margin-bottom: calc(var(--baseMargin) * 4);
+}
+
+.project-more-btn {
+  display: block;
 }

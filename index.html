@@ -17,7 +17,9 @@
   </header>
   <main>
     <section id="hero">
-      <h1 class="hero-title">Hello</h1>
+      <h1 class="hero-title">Hello
+        <span>⛱</span>
+      </h1>
       <nav class="nav-links">
         <ul>
           <li class="main-list">
@@ -55,8 +57,8 @@
           </ul>
         </nav>
       </div>
-      <article class="about-article">
-        <div class="motivation">
+      <div class="about-articles">
+        <article class="motivation">
           <h2 class="motivation-title">
             <span>경험을 추구하는 개발자</span>
             <span>정영신 입니다</span>
@@ -67,9 +69,9 @@
           <p class="motivation-desc">사람과 사회에 도움이 되는 일을 하고 싶습니다.</p>
           <p class="motivation-desc">명품의 차이는 디테일에서 나온다는 마음가짐으로 업무에 임합니다.</p>
           <p class="motivation-desc">마감에 초인적인 힘을 발휘합니다</p>
-        </div>
-        <div class="skills">
-          <h2 class="skills-title">Skills</h2>
+        </article>
+        <article class="skills">
+          <h2 class="skills-title">🛠Skills</h2>
           <div class="skills-container">
             <div class="skill-item">
               <h3 class="skill-item-title">Language</h3>
@@ -107,15 +109,53 @@
               </ul>
             </div>
           </div>
-        </div>
-      </article>
+        </article>
+      </div>
     </section>
     <section id="projects">
-      <article class="project">
+      <div class="project-cover">
         <dl>
-          <dt></dt>
-          <dd></dd>
+          <dt>
+            <h2 class="cover-title">Project</h2>
+          </dt>
+          <dd class="cover-desc">Typography Scale</dd>
+          <dd class="cover-desc">Sense-projects</dd>
         </dl>
+        <nav class="nav-links">
+          <ul>
+            <li class="main-list">
+              <a href="#about" class="main-link">about</a>
+            </li>
+            <li class="main-list">
+              <a href="#projects" class="main-link">project</a>
+            </li>
+            <li class="main-list">
+              <a href="#contact" class="main-link">contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <article class="project typography-scale">
+        <div class="project-desc-wrap">
+          <dl>
+            <dt class="project-title">Typography scale</dt>
+            <dd class="project-desc">웹 타이포그래피 스케일을 알아보고 테스트할 수 있습니다</dd>
+          </dl>
+          <button class="project-more-btn">
+            <a href="#">more</a>
+          </button>
+        </div>
+      </article>
+      <article class="project sense-projects">
+        <div class="project-desc-wrap">
+          <dl>
+            <dt class="project-title">Sense-projects</dt>
+            <dd class="project-desc">감각(시각, 청각, 미각)에 관련된 미니 프로젝트를 볼 수 있습니다</dd>
+          </dl>
+          <button class="project-more-btn">
+            <a href="#">more</a>
+          </button>
+        </div>
       </article>
     </section>
     <section class="contact"></section>
