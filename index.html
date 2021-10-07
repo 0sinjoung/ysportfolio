@@ -11,8 +11,12 @@
   <title>Portfolio | Joung Yeongsin </title>
 </head>
 <body>
+  <button type="menu" class="menu-bars">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
   <header id="main-header">
-    <button class="menu-bars">ham</button>
     <h1 class="header-title">Frontend developer</h1>
   </header>
   <main>
@@ -85,8 +89,8 @@
               <h3 class="skill-item-title framework">Framework</h3>
               <ul class="language-lists">
                 <li class="skill-list">Vue.js</li>
+                <li class="skill-list">React</li>
                 <li class="skill-list">JQuery</li>
-                <li class="skill-list"></li>
               </ul>
             </div>
             <div class="skill-item">
@@ -119,7 +123,7 @@
             <h2 class="cover-title">Project</h2>
           </dt>
           <dd class="cover-desc">Typography Scale</dd>
-          <dd class="cover-desc">Sense mini-projects</dd>
+          <dd class="cover-desc">Sense Mini-projects</dd>
         </dl>
         <nav class="nav-links">
           <ul>
@@ -141,9 +145,7 @@
             <dt class="project-title">Typography scale</dt>
             <dd class="project-desc">웹 타이포그래피 스케일을 알아보고 테스트할 수 있습니다</dd>
           </dl>
-          <button class="project-more-btn">
-            <a href="#">more</a>
-          </button>
+          <a href="#" class="project-more-link">more</a>
         </div>
       </article>
       <article class="project sense-projects">
@@ -152,13 +154,11 @@
             <dt class="project-title">Sense mini-projects</dt>
             <dd class="project-desc">감각(시각, 청각, 미각)에 관련된 미니 프로젝트를 볼 수 있습니다</dd>
           </dl>
-          <button class="project-more-btn">
-            <a href="#">more</a>
-          </button>
+          <a href="#" class="project-more-link">more</a>
         </div>
       </article>
     </section>
-    <section class="contact">
+    <section id="contact">
       <div class="contact-cover">
         <dl>
           <dt>
@@ -187,9 +187,9 @@
           <h2 class="name">정 영 신</h2>
           <span class="department">Frontend Developer</span>
         </div>
-        <address>
+        <address class="address-container">
           <ul>
-            <li class="address-item">
+            <li class="address-item tel">
               <span class="address-item-title">Tel.</span>
               <a href="tel:+8201089997884">010-8999-7884</a>
             </li>
@@ -197,19 +197,21 @@
               <span class="address-item-title">E-mail</span>
               <a href="mailto:yeongsinjoung@gmail.com">yeongsinjoung@gmail.com</a>
             </li>
-            <li class="address-item">
+            <li class="address-item github">
               <span class="address-item-title">guthub</span>
               <a href="https://github.com/0sinjoung">github.com/0sinjoung</a>
             </li>
-            <li class="address-item">
+            <li class="address-item notion">
               <span class="address-item-title">Notion</span>
               <a href="https://rightful-process-095.notion.site/JavaScript-1437d16fbba04bc6a208602374353fd4">notion link</a>
             </li>
           </ul>
         </address>
-        <button>
-          <a href="#">이력서 보러가기</a>
-        </button>
+        <a href="https://drive.google.com/file/d/1NlAYeQnAKWBP-wMIRhk7rzMBNfpJ6FHX/view?usp=sharing" target="_blank" class="resume">
+          <span>
+            <strong>이력서</strong> 보러가기
+          </span>
+        </a>
       </div>
     </section>
   </main>
