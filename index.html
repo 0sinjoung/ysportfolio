@@ -17,33 +17,37 @@
     <span></span>
   </button>
   <header id="main-header">
-    <h1 class="header-title">Frontend developer</h1>
+    <h1 class="header-title">
+      <a href="#">
+        Frontend developer
+      </a>
+    </h1>
   </header>
   <main>
     <section id="hero">
-      <h1 class="hero-title">Hello
-        <span>⛱</span>
-      </h1>
-      <nav class="nav-links">
-        <ul>
-          <li class="main-list">
-            <a href="#about" class="main-link">about</a>
-          </li>
-          <li class="main-list">
-            <a href="#projects" class="main-link">project</a>
-          </li>
-          <li class="main-list">
-            <a href="#contact" class="main-link">contact</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="hero-cover">
+        <h1 class="hero-title">Hello
+          <span class="hero-icon"></span>
+        </h1>
+        <nav class="nav-links">
+          <ul>
+            <li class="main-list">
+              <a href="#about" class="main-link">about</a>
+            </li>
+            <li class="main-list">
+              <a href="#projects" class="main-link">project</a>
+            </li>
+            <li class="main-list">
+              <a href="#contact" class="main-link">contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </section>
     <section id="about">
       <div class="about-cover">
         <dl>
-          <dt>
-            <h2 class="cover-title">About</h2>
-          </dt>
+          <dt class="cover-title">About</dt>
           <dd class="cover-desc">Motivation</dd>
           <dd class="cover-desc">Skills</dd>
         </dl>
@@ -95,8 +99,7 @@
             </div>
             <div class="skill-item">
               <h3 class="skill-item-title basic-knowledge">
-                <span>Basic</span>
-                <span>knowledge</span>
+                Basic knowledge
               </h3>
               <ul class="language-lists">
                 <li class="skill-list">Git</li>
@@ -119,9 +122,7 @@
     <section id="projects">
       <div class="project-cover">
         <dl>
-          <dt>
-            <h2 class="cover-title">Project</h2>
-          </dt>
+          <dt class="cover-title">Project</dt>
           <dd class="cover-desc">Typography Scale</dd>
           <dd class="cover-desc">Sense Mini-projects</dd>
         </dl>
@@ -139,31 +140,31 @@
           </ul>
         </nav>
       </div>
-      <article class="project typography-scale">
-        <div class="project-desc-wrap">
-          <dl>
-            <dt class="project-title">Typography scale</dt>
-            <dd class="project-desc">웹 타이포그래피 스케일을 알아보고 테스트할 수 있습니다</dd>
-          </dl>
-          <a href="#" class="project-more-link">more</a>
-        </div>
-      </article>
-      <article class="project sense-projects">
-        <div class="project-desc-wrap">
-          <dl>
-            <dt class="project-title">Sense mini-projects</dt>
-            <dd class="project-desc">감각(시각, 청각, 미각)에 관련된 미니 프로젝트를 볼 수 있습니다</dd>
-          </dl>
-          <a href="#" class="project-more-link">more</a>
-        </div>
-      </article>
+      <div class="project-articles">
+        <article class="project typography-scale">
+          <div class="project-desc-wrap">
+            <dl>
+              <dt class="project-title">Typography scale</dt>
+              <dd class="project-desc">웹 타이포그래피 스케일을 알아보고 테스트할 수 있습니다</dd>
+            </dl>
+            <a href="#" class="project-more-link">more</a>
+          </div>
+        </article>
+        <article class="project sense-projects">
+          <div class="project-desc-wrap">
+            <dl>
+              <dt class="project-title">Sense mini-projects</dt>
+              <dd class="project-desc">감각(시각, 청각, 미각)에 관련된 미니 프로젝트를 볼 수 있습니다</dd>
+            </dl>
+            <a href="#" class="project-more-link">more</a>
+          </div>
+        </article>
+      </div>
     </section>
     <section id="contact">
       <div class="contact-cover">
         <dl>
-          <dt>
-            <h2 class="cover-title">Contact</h2>
-          </dt>
+          <dt class="cover-title">Contact</dt>
           <dd class="cover-desc">E-mail</dd>
           <dd class="cover-desc">github</dd>
           <dd class="cover-desc">Notion</dd>
